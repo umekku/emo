@@ -1,0 +1,15 @@
+services:
+  mind-os:
+    build: .
+    container_name: mind-os
+    ports:
+      - "8081:8081"
+    environment:
+      - SERVICE_NAME=Mind OS
+      - PORT=8081
+      - GIN_MODE=release
+    volumes:
+      # Current directory mapped to /app/data inside container
+      # Database will be stored here
+      - ./data:/app
+    restart: unless-stopped

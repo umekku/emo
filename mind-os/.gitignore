@@ -1,0 +1,32 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Swagger docs
+docs/
+
+# IDEs
+.vscode/
+.idea/
+
+# Dependencies
+vendor/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+mind.db
+bin/
+
+# Test Artifacts
+test_output.txt
+test_result.txt
